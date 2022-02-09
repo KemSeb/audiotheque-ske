@@ -12,8 +12,8 @@ public class Album {
     private String title;
 
 
-    @OneToOne
-    @JoinColumn(name = "artistId")
+    @ManyToOne
+    @JoinColumn(name = "artist_id")
     private Artist artist;
 
     public Long getId() {
